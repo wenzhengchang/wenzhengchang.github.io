@@ -348,6 +348,44 @@
       background: var(--paper);
     }
 
+    .post-list {
+      display: grid;
+      gap: 0;
+      margin-top: 4px;
+    }
+
+    .post-list a {
+      display: grid;
+      gap: 6px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .post-list a:first-child {
+      padding-top: 0;
+    }
+
+    .post-list a:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .post-list strong {
+      color: var(--coal);
+      font-size: 17px;
+      line-height: 1.42;
+    }
+
+    .post-list time {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .post-list a:hover strong {
+      color: var(--green);
+    }
+
     .text-link {
       display: inline-flex;
       align-items: center;
@@ -555,16 +593,25 @@
           <h3>博客园</h3>
           <p>技术笔记、实验记录、踩坑复盘和长期学习轨迹，可以从这里进入。</p>
           <div class="link-row">
-            <a class="text-link" href="https://www.cnblogs.com/wzcnb" target="_blank" rel="noreferrer">Visit blog</a>
+            <a class="text-link" href="https://www.cnblogs.com/wzcnb" target="_blank" rel="noreferrer">进入博客园</a>
           </div>
         </article>
 
         <article class="panel">
-          <h3>Contact</h3>
-          <p>项目合作、研究交流、音乐相关的联系都可以通过邮件或 GitHub 开始。</p>
-          <div class="link-row">
-            <a class="text-link" href="mailto:819192552@qq.com">Email</a>
-            <a class="text-link" href="https://github.com/wenzhengchang" target="_blank" rel="noreferrer">GitHub</a>
+          <h3>随笔</h3>
+          <div class="post-list" aria-label="博客文章列表">
+            <a href="https://www.cnblogs.com/wzcnb/p/19853084" target="_blank" rel="noreferrer">
+              <strong>豆包对话系统架构深度剖析</strong>
+              <time datetime="2026-04-11">2026.04.11</time>
+            </a>
+            <a href="https://www.cnblogs.com/wzcnb/p/19849455" target="_blank" rel="noreferrer">
+              <strong>AI Agent 的应用方向本质：从“替代人的哪种能力”理解 2025-2026 市场全景</strong>
+              <time datetime="2026-04-11">2026.04.11</time>
+            </a>
+            <a href="https://www.cnblogs.com/wzcnb/p/19626500" target="_blank" rel="noreferrer">
+              <strong>先验越少，上限越高：从神经网络到智能Agent的本质认知</strong>
+              <time datetime="2026-02-20">2026.02.20</time>
+            </a>
           </div>
         </article>
       </div>

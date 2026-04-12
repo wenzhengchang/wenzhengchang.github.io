@@ -376,31 +376,6 @@
       color: var(--muted);
     }
 
-    .updates {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      border-top: 1px solid var(--line);
-    }
-
-    .updates li {
-      display: grid;
-      grid-template-columns: 138px minmax(0, 1fr);
-      gap: 18px;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .updates time {
-      color: var(--green);
-      font-weight: 800;
-    }
-
-    .updates p {
-      margin: 0;
-      color: var(--muted);
-    }
-
     footer {
       display: flex;
       justify-content: space-between;
@@ -422,8 +397,7 @@
       .topbar,
       .intro,
       .section-head,
-      .panel.featured,
-      .updates li {
+      .panel.featured {
         grid-template-columns: 1fr;
       }
 
@@ -607,51 +581,20 @@
           <h3>创作主页</h3>
           <p>音乐作品和创作轨迹放在这里，代码之外的另一条长期线索。</p>
           <div class="link-row">
-            <a class="text-link" href="https://music.163.com/#/artist?id=33242431" target="_blank" rel="noreferrer">打开创作主页</a>
+            <a class="text-link" href="https://music.163.com/#/artist?id=33242431" target="_blank" rel="noreferrer">创作主页</a>
           </div>
         </article>
 
         <article class="panel">
           <h3>随便试听一下</h3>
-          <p>《毕业之前》可以直接在这里试听；播放器不可用时，也可以打开网易云页面。</p>
           <iframe
             class="player-frame"
             title="毕业之前 - 网易云音乐播放器"
             src="https://music.163.com/outchain/player?type=2&id=2007805822&auto=0&height=66"
             loading="lazy">
           </iframe>
-          <div class="link-row">
-            <a class="text-link" href="https://music.163.com/#/song?id=2007805822" target="_blank" rel="noreferrer">打开网易云页面</a>
-          </div>
-          <div class="tags" aria-label="音乐标签">
-            <span class="tag">毕业之前</span>
-            <span class="tag">试听</span>
-            <span class="tag">网易云音乐</span>
-          </div>
         </article>
       </div>
-    </section>
-
-    <section class="section" aria-labelledby="updates-title">
-      <div class="section-head">
-        <p class="kicker">Updates</p>
-        <h2 id="updates-title">最近更新。</h2>
-      </div>
-
-      <ul class="updates">
-        <li>
-          <time datetime="2026-04-12">2026.04.12</time>
-          <p>个人主页改版：加入开源项目、DBLP 论文、音乐与博客园入口。</p>
-        </li>
-        <li>
-          <time datetime="2026-04-12">2026.04.12</time>
-          <p>StackFoundry README 增加中英文版本，项目准备公开发布。</p>
-        </li>
-        <li>
-          <time datetime="2026-04-05">2026.04.05</time>
-          <p>个人主页正式上线。</p>
-        </li>
-      </ul>
     </section>
 
     <footer>
